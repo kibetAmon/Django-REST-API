@@ -34,11 +34,11 @@ _Windows_
 ```
 Next let's bootstrap the django application:
 ```console
-django-admin startproject person
+django-admin startproject RestAPI
 ```
-Next lets create an app for our _person_ project, make sure you _cd person_ before running the command below:
+Next lets create an app for our _RestAPI_ project, make sure you _cd ResAPI_ before running the command below:
 ```console
-django-admin startapp RestAPI
+django-admin startapp person
 ```
 
 After activating, you should see _(venv)_ in your terminal, install the packages in the _requirements.txt_ by using the command below:
@@ -58,10 +58,10 @@ tzdata==2023.3
 
 
 ## Time to code
-You should have a new directory _RestAPI_ created and it should have the following files and folder.
+You should have a new directory _person_ created and it should have the following files and folder.
 
 ```console
- ./RestAPI
+ ./person
         __init__.py
         admin.py
         apps.py
@@ -70,5 +70,5 @@ You should have a new directory _RestAPI_ created and it should have the followi
         views.py
 ```
 
-Create two additional files **serializers.py** and **urls.py** in the directory _./RestAPI_.
+Create two additional files **serializers.py** and **urls.py** in the directory _./person_.
 
