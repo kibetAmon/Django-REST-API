@@ -81,5 +81,17 @@ You should have a new directory _person_ created and it should have the followin
 Create two additional files **serializers.py** and **urls.py** in the directory _./person_.
 Don't worry; you will soon understand why those two files exist.
 
-First, in the ./RestAPI/RestAPI folder, go to the settings.py and add to INSTALLED_APPS, person app and rest_framework.
+First, in the ./RestAPI/RestAPI folder, go to the settings.py and add to INSTALLED_APPS, _person_ app and _rest_framework_.
 
+```console
+INSTALLED_APPS = [
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'rest_framework', # add this
+        'person' # add this too
+    ]
+```
