@@ -51,3 +51,8 @@ sqlparse==0.4.4
 typing_extensions==4.7.1
 tzdata==2023.3
 ```
+
+Next lets create an app for our _person_ project, make sure you _cd person_ before running the command below:
+```console
+django-admin startapp RestAPI
+```
