@@ -70,4 +70,5 @@ You should have a new directory _RestAPI_ created and it should have the followi
         views.py
 ```
 
+Create two additional files ==serializers.py== and ==urls.py== in the directory ./RestAPI.
 
