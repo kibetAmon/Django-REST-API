@@ -23,3 +23,5 @@ sqlparse==0.4.4
 typing_extensions==4.7.1
 tzdata==2023.3
 ```
+
+It is best practice to create a virtual environment so that all the packages you use are specific to your application. Before we do any installing, let's create an isolated environment for our project. It could be confusing to distinguish between the packages you use in your global Python environment and the ones you require in your application. How did we accomplish that?
