@@ -62,6 +62,7 @@ You should have a new directory _person_ created and it should have the followin
 
 ```console
  ./person
+        ./migrations
         __init__.py
         admin.py
         apps.py
@@ -71,4 +72,5 @@ You should have a new directory _person_ created and it should have the followin
 ```
 
 Create two additional files **serializers.py** and **urls.py** in the directory _./person_.
+Don't worry; you will soon understand why those two files exist.
 
