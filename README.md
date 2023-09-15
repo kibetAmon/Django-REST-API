@@ -13,6 +13,10 @@ Create a folder for your project.
 mkdir  REST API
 ```
 
+Next let's bootstrap the django application:
+```console
+django-admin startproject person
+```
 Open the folder with your favorite code editor and create a _requirements.txt_ file in the root folder of REST API.
 
 In your _requirements.txt_ file you should have this;
@@ -48,7 +52,4 @@ _Windows_
 pip install -r requirements.txt
 ```
 
-Next let's bootstrap the django application:
-```console
-django-admin person
-```
+
