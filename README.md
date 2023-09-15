@@ -163,4 +163,6 @@ Now we can perform CRUD using the endpoint **_/api_**. We have sucessfully crrea
 3. Hit the endpoint **_/api_**
 4. You should see an interface to interact with various CRUD operations
 5. To CREATE; simply enter data in the content field in JSON format and hit the **POST** button
-6. To READ;
+6. To READ; pass a **person's id**
+7. To UPDATE; pass a **person's id**, enter data in the content field in JSON format and hit the **PUT** button
+8. To DELETE; pass a **person's id** and hit the **DELETE** button
