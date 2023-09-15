@@ -95,3 +95,14 @@ INSTALLED_APPS = [
         'person' # add this too
     ]
 ```
+
+First let's define the model for our _person_, Go to the **models.py** file in the _./RestAPI/person_ and you should have this below:
+
+```console
+from django.db import models
+
+    class person(models.Model):
+        name = models.CharField(max_length=255)
+```
+
+We won't focus on the database we'll use in this lesson, so we'll just use the default Django sqlite db (isn't Django awesome?). A model simply describes how our database tables will be arranged.
