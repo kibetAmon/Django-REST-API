@@ -56,3 +56,9 @@ Next lets create an app for our _person_ project, make sure you _cd person_ befo
 ```console
 django-admin startapp RestAPI
 ```
+
+## Time to code
+You should have the following folders in your applications directory:
+![Alt text](https://drive.google.com/file/d/1WBr1QS_txTKgR4ScA8ADnWHlVDZWk7_t/view?usp=drive_link?raw=true "Title")
+
+
