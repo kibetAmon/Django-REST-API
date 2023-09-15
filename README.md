@@ -36,6 +36,10 @@ Next let's bootstrap the django application:
 ```console
 django-admin startproject person
 ```
+Next lets create an app for our _person_ project, make sure you _cd person_ before running the command below:
+```console
+django-admin startapp RestAPI
+```
 
 After activating, you should see _(venv)_ in your terminal, you can install the packages, we stated in the _requirements.txt_ by using the command below:
 _Windows_
@@ -52,10 +56,6 @@ typing_extensions==4.7.1
 tzdata==2023.3
 ```
 
-Next lets create an app for our _person_ project, make sure you _cd person_ before running the command below:
-```console
-django-admin startapp RestAPI
-```
 
 ## Time to code
 You should have a new directory _RestAPI_ created and it should have the following files and folder.
