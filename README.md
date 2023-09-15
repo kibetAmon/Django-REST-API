@@ -156,3 +156,11 @@ from django.contrib import admin
 ```
 
 Now we can perform CRUD using the endpoint **_/api_**. We have sucessfully crreated a CRUD application with Django Rest Framework!
+
+##How to run and use the API
+1. Install a REST client by running the command **_pip install rest-client_**
+2. Start the local server by running the command **_python manage.py runserver_**
+3. Hit the endpoint **_/api_**
+4. You should see an interface to interact with various CRUD operations
+5. To CREATE; simply enter data in the content field in JSON format and hit the **POST** button
+6. To READ;
