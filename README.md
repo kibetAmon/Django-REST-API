@@ -127,3 +127,8 @@ We'd also create a serializer for the _person_ in the **serializers.py** file in
 
 So that we can create, read, edit, and delete people, let's establish CRUD endpoints for our person. Remember the brief introduction to REST API?
 
+In the **views.py** in your _person_ folder, lets define what happens when we retrieve a request to perform CRUD on a person.
+
+First, add a function to get a single person from the DB when the user either passes an id or not.
+
+
