@@ -13,10 +13,6 @@ Create a folder for your project.
 mkdir  REST API
 ```
 
-Next let's bootstrap the django application:
-```console
-django-admin startproject person
-```
 Open the folder with your favorite code editor and create a _requirements.txt_ file in the root folder of REST API.
 
 It is best practice to create a virtual environment so that all the packages you use are specific to your application. Before we do any installing, let's create an isolated environment for our project. It could be confusing to distinguish between the packages you use in your global Python environment and the ones you require in your application. How did we accomplish that?
@@ -35,6 +31,10 @@ source venv/bin/activate
 _Windows_
 ```console
 .\venv\Scripts\activate.bat
+```
+Next let's bootstrap the django application:
+```console
+django-admin startproject person
 ```
 
 After activating, you should see _(venv)_ in your terminal, you can install the packages, we stated in the _requirements.txt_ by using the command below:
