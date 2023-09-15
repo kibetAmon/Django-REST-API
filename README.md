@@ -21,17 +21,9 @@ Make sure you are in the application folder and run the command you have below:
 ```console
 python -m venv ./venv
 ```
-You should have a _./venv_ folder in your application folder. Now activate the isolated environment, so all our packages will be installed there, a virtual environment is activated differently for Mac OSX and Windows.
+You should have a _./venv_ folder in your application folder.
 
-_Mac OSX_
-```console
-source venv/bin/activate
-```
 
-_Windows_
-```console
-.\venv\Scripts\activate.bat
-```
 Next let's bootstrap the django application:
 ```console
 django-admin startproject RestAPI
@@ -43,6 +35,18 @@ django-admin startapp person
 Install Django REST framework by running command;
 ```console
 pip install djangorestframework
+```
+
+Now activate the isolated environment, so all our packages will be installed there, a virtual environment is activated differently for Mac OSX and Windows.
+
+_Mac OSX_
+```console
+source venv/bin/activate
+```
+
+_Windows_
+```console
+.\venv\Scripts\activate.bat
 ```
 After activating, you should see _(venv)_ in your terminal. Install the packages in the _requirements.txt_ by using the command below:
 
