@@ -5,3 +5,10 @@ Have you ever wondered how the websites you use the most operate? Yes, they are 
 REST controls how the API appears. "Representational State Transfer" is what it stands for. It is a set of guidelines that programmers adhere to when building an API. One of these rules stipulates that when you link to a particular URL, you should be able to access a specific piece of information (referred to as a resource). Through HTTP Requests made to the provided urls, a REST API interfaces with the stunning front-end you are currently viewing, enabling you to carry out actions such as CREATE, READ, UPDATE and DELETE.
 
 To be deemed REST, an API must follow four simple rules: Create, Read, Update, and Delete. Typically, to create a resource, we would use a POST request to a URL in our API, GET to read, PUT to update, and DELETE to delete.
+
+## Set Up
+First things first, make sure you have python installed on your PC or Mac. 
+Create a folder for your project.
+```console
+mkdir  REST API
+```
