@@ -129,6 +129,6 @@ So that we can create, read, edit, and delete people, let's establish CRUD endpo
 
 In the **views.py** in your _person_ folder, lets define what happens when we retrieve a request to perform CRUD on a person.
 
-First, add a function to get a single person from the DB when the user either passes an id or not.
+First, add a function to get a single person from the DB when the user either passes an id or not then add a function to create a person. What if we wanted to change the name of a person, we need to use **put** inherited from the API view class. The the last operation is deleting a person.
 
 
