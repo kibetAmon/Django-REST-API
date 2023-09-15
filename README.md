@@ -58,7 +58,16 @@ django-admin startapp RestAPI
 ```
 
 ## Time to code
-You should have the following folders in your applications directory:
-![Alt text](https://drive.google.com/file/d/1WBr1QS_txTKgR4ScA8ADnWHlVDZWk7_t/view?usp=drive_link)
+You should have a new directory _RestAPI_ created and it should have the following files and folder.
+
+```console
+ ./RestAPI
+        __init__.py
+        admin.py
+        apps.py
+        models.py
+        tests.py
+        views.py
+```
 
 
