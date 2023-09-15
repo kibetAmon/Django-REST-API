@@ -131,4 +131,26 @@ In the **views.py** in your _person_ folder, lets define what happens when we re
 
 First, add a function to get a single person from the DB when the user either passes an id or not then add a function to create a person. What if we wanted to change the name of a person, we need to use **put** inherited from the API view class. The the last operation is deleting a person.
 
+But we are not done, we'd have to setup routes so that our front-end can communicate with our REST API and create people. In the **urls.py** in our _person_ folder, we'd define the routes:
 
+```console
+ from django.urls import path
+    from .views import PersonAPIView
+
+    urlpatterns = [
+        path('person', PersonAPIView.as_view()),
+        path('todo/<str:pk>', PersonAPIView.as_view()) # to capture our ids
+    ]
+```
+
+We still not done, our front-end can still communicate, so we need to add the urls for our _person_ to the global **urls.py** file located in our _./RestAPI_ where we found the **settings.py** file and we add the _person_ urls as below:
+
+```console
+from django.contrib import admin
+    from django.urls import path, include
+
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('api/', include('person.urls'))
+    ]
+```
