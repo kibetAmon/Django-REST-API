@@ -41,7 +41,7 @@ Next lets create an app for our _person_ project, make sure you _cd person_ befo
 django-admin startapp RestAPI
 ```
 
-After activating, you should see _(venv)_ in your terminal, you can install the packages, we stated in the _requirements.txt_ by using the command below:
+After activating, you should see _(venv)_ in your terminal, install the packages in the _requirements.txt_ by using the command below:
 _Windows_
 ```console
 pip install -r requirements.txt
