@@ -122,3 +122,6 @@ python manage.py migrate
 ```
 
 We should have our tables constructed, including our person table and a few additional standard Django tables (we won't discuss those now).
+
+We'd also create a serializer for the _person_ in the **serializers.py** file in the _person_ folder. A Serializer allows us to convert complex data types to native python data types and then convert back to JSON or XML.
+
