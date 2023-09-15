@@ -154,3 +154,5 @@ from django.contrib import admin
         path('api/', include('person.urls'))
     ]
 ```
+
+Now we can perform CRUD using the endpoint **_/api_**. We have sucessfully crreated a CRUD application with Django Rest Framework!
