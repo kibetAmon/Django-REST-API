@@ -5,6 +5,8 @@ from .models import person
 from .serializers import personSerializer
 from rest_framework.response import Response
 
+from rest_framework.parsers import JSONParser, ParseError
+
 
 # Create your views here.
 class PersonAPIView(APIView):
@@ -27,24 +29,25 @@ class PersonAPIView(APIView):
             return Response(serializer.data)
 
     # A function to CREATE a person
-    def post(self, request, format=None):
-        data = request.data
-        serializer = personSerializer(data=data)
+
+    def post(self, request):
+        print(request.data)
+        serializer = personSerializer(data=request.data)
 
         # Check if the data passed is valid
-        serializer.is_valid(raise_exception=True)
+        if serializer.is_valid():
+            serializer.save()
+            response = Response()
+            response.data = {
+                'message': 'Person added successfully',
+                'data': serializer.data
+            }
 
-        # Create person in the database
-        serializer.save()
+            return response
 
-        # Return response to user
-        response = Response()
-        response.data = {
-            'message': 'Person added successfully',
-            'data': serializer.data
-        }
+        else:
+            return Response.status_code(500)
 
-        return response
 
     # UPDATE a person
     def put(self, request, pk=None, format=None):
@@ -73,5 +76,5 @@ class PersonAPIView(APIView):
         # delete the person
         person_to_delete.delete()
         return Response({
-            'message':'Person deleted successfully'
+            'message': 'Person deleted successfully'
         })
