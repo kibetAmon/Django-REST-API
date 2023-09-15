@@ -81,3 +81,5 @@ You should have a new directory _person_ created and it should have the followin
 Create two additional files **serializers.py** and **urls.py** in the directory _./person_.
 Don't worry; you will soon understand why those two files exist.
 
+First, in the ./RestAPI/RestAPI folder, go to the settings.py and add to INSTALLED_APPS, person app and rest_framework.
+
