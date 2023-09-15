@@ -106,3 +106,19 @@ from django.db import models
 ```
 
 We won't focus on the database we'll use in this lesson, so we'll just use the default Django sqlite db (isn't Django awesome?). A model simply describes how our database tables will be arranged.
+
+After creating our model, we need to migrate that model to our tables in our database.
+
+First you'd run:
+
+```console
+python manage.py makemigrations
+```
+
+This will detect any models created and make the migrations file and then we create the tables by using the command below:
+
+```console
+python manage.py migrate
+```
+
+We should have our tables constructed, including our person table and a few additional standard Django tables (we won't discuss those now).
