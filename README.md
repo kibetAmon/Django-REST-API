@@ -41,3 +41,14 @@ _Windows_
 ```console
 .\venv\Scripts\activate.bat
 ```
+
+After activating, you should see _(venv)_ in your terminal, you can install the packages, we stated in the _requirements.txt_ by using the command below:
+_Windows_
+```console
+pip install -r requirements.txt
+```
+
+Next let's bootstrap the django application:
+```console
+django-admin person
+```
