@@ -40,8 +40,11 @@ Next lets create an app for our _RestAPI_ project, make sure you _cd ResAPI_ bef
 ```console
 django-admin startapp person
 ```
-
-After activating, you should see _(venv)_ in your terminal, install the packages in the _requirements.txt_ by using the command below:
+Install Django REST framework by running command;
+```console
+pip install djangorestframework
+```
+After activating, you should see _(venv)_ in your terminal. Install the packages in the _requirements.txt_ by using the command below:
 
 ```console
 pip install -r requirements.txt
