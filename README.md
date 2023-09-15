@@ -19,15 +19,6 @@ django-admin startproject person
 ```
 Open the folder with your favorite code editor and create a _requirements.txt_ file in the root folder of REST API.
 
-In your _requirements.txt_ file you should have this;
-```console
-asgiref==3.7.2
-Django==4.2.5
-sqlparse==0.4.4
-typing_extensions==4.7.1
-tzdata==2023.3
-```
-
 It is best practice to create a virtual environment so that all the packages you use are specific to your application. Before we do any installing, let's create an isolated environment for our project. It could be confusing to distinguish between the packages you use in your global Python environment and the ones you require in your application. How did we accomplish that?
 
 Make sure you are in the application folder and run the command you have below:
@@ -52,4 +43,11 @@ _Windows_
 pip install -r requirements.txt
 ```
 
-
+In your _requirements.txt_ file you should have this;
+```console
+asgiref==3.7.2
+Django==4.2.5
+sqlparse==0.4.4
+typing_extensions==4.7.1
+tzdata==2023.3
+```
