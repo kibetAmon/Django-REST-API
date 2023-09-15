@@ -25,3 +25,19 @@ tzdata==2023.3
 ```
 
 It is best practice to create a virtual environment so that all the packages you use are specific to your application. Before we do any installing, let's create an isolated environment for our project. It could be confusing to distinguish between the packages you use in your global Python environment and the ones you require in your application. How did we accomplish that?
+
+Make sure you are in the application folder and run the command you have below:
+```console
+python -m venv ./venv
+```
+You should have a _./venv_ folder in your application folder. Now activate the isolated environment, so all our packages will be installed there, a virtual environment is activated differently for Mac OSX and Windows.
+
+_Mac OSX_
+```console
+source venv/bin/activate
+```
+
+_Windows_
+```console
+.\venv\Scripts\activate.bat
+```
