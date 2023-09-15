@@ -26,5 +26,20 @@ class PersonAPIView(APIView):
             serializer = personSerializer(data, many=True)
             return Response(serializer.data)
 
+    # A function to create a person
+    def post(self, request, format=None):
+        data = request.data
+        serializer = personSerializer(data=data)
 
+        # Check if the data passed is valid
+        serializer.is_valid(raise_exception=True)
 
+        # Create person in the database
+        serializer.save()
+
+        # Return response to user
+        response = Response()
+        response.data = {
+            'message': 'Person added successfully',
+            'data': serializer.data
+        }
